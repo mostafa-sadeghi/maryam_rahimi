@@ -44,19 +44,15 @@ print(prices)
 def listOilPrices(prices):
     string = ''
 
-    string += f'--------------------------------------------------\n{"Country":<14}{"Oil Price":^14}{"Continent":>14}\n--------------------------------------------------\n'
+    string += f'--------------------------------------------------\n{"Country":<14}{"Oil Price":<14}{"Continent":<14}\n--------------------------------------------------'
 
-    for price in prices:
-        string += f'{price[0]:<14}{price[1]:^14}{price[2]:>14}\n'
+    for i in range(len(prices)):
+        if i % 3 == 0:
+
+            string += f'\n{prices[i]:<14}'
+        else:
+            string += f'{prices[i]:<14} '
     string += '\n--------------------------------------------------'
-    ########################## NOTE : ANOTHER WAY###########################
-#     string += f'''--------------------------------------------------
-# {"Country":<14}{"Oil Price":^14}{"Continent":>14}
-# --------------------------------------------------\n'''
-
-#     for price in prices:
-#         string += f'{price[0]:<14}{price[1]:^14}{price[2]:>14}\n'
-#     string += '\n--------------------------------------------------'
     return string
 
 

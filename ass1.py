@@ -1,4 +1,18 @@
-def nonNegativeFloatValidation(prompt, errorMessage):
+'''
+This Program is used to listing all countries oil prices 
+'''
+
+
+def nonNegativeFloatValidation(prompt: str, errorMessage: str) -> float:
+    '''
+    This function is used for validating non negative float.
+
+    Parameters : 
+        prompt : str,
+        errorMessage : str
+    Returns : float
+    '''
+
     number = input(prompt)
     try:
         float_number = float(number)
@@ -13,7 +27,17 @@ def nonNegativeFloatValidation(prompt, errorMessage):
         return nonNegativeFloatValidation(prompt, errorMessage)
 
 
-def readOilPrices(prices, noOfCountries):
+def readOilPrices(prices: list, noOfCountries: float) -> list:
+    '''
+    This Function is for reading oil prices
+
+    Parameters:
+        prices : 2D List,
+        noOfCountries : float
+
+        Returns: 
+            prices : 2D List
+    '''
     valid_continent = ['Asia', 'Africa', 'Europe',
                        'North America', 'South America', 'Australia', 'Antarctica']
 
@@ -37,7 +61,16 @@ num_of_countries = nonNegativeFloatValidation(
 prices = readOilPrices([], num_of_countries)
 
 
-def listOilPrices(prices):
+def listOilPrices(prices: list) -> str:
+    '''
+    This Function is used for listing the details of all prices records.
+
+    Paremeters :
+        prices : 2D List,
+
+    Returns :
+        oilPricesDetails : str
+    '''
     string = ''
 
     string += f'--------------------------------------------------\n{"Country":<14}{"Oil Price":^14}{"Continent":>14}\n--------------------------------------------------\n'
@@ -45,7 +78,7 @@ def listOilPrices(prices):
     for price in prices:
         string += f'{price[0]:<14}{price[1]:^14}{price[2]:>14}\n'
     string += '\n--------------------------------------------------'
-    ##########################NOTE : ANOTHER WAY###########################
+    ########################## NOTE : ANOTHER WAY###########################
 #     string += f'''--------------------------------------------------
 # {"Country":<14}{"Oil Price":^14}{"Continent":>14}
 # --------------------------------------------------\n'''
