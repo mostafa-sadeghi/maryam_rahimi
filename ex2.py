@@ -156,13 +156,24 @@ PASS = 'root'
 # print(x)
 
 
-def multiply(*args):
-    total = 1
-    for number in args:
-        total *= number   # total *= number
+# def multiply(*args):
+#     total = 1
+#     for number in args:
+#         total *= number   # total *= number
 
-        return total
+#     return total
 
 
-print(multiply(2, 3))
-print(multiply(2, 3, 4, 5, 6, 7, 8))
+# print(multiply(2, 3))
+# print(multiply(2, 3, 4, 5, 6, 7, 8))
+
+
+# fizz buzz
+'''
+get a number from input
+3  = > fizz
+5  = > buzz
+
+3,5 = > fizz buzz
+
+'''
