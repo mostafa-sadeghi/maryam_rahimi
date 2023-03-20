@@ -40,9 +40,9 @@
 
 numbers = [1, 2, 3, 44, 2, 3, 44, 1, 2]
 # print(numbers.count(100))
-number = int(input('enter a number: '))
-counter = 0
-for n in numbers:
-    if n == number:
-        counter += 1
-print(f'{number} count : {counter}')
+# number = int(input('enter a number: '))
+# counter = 0
+# for n in numbers:
+#     if n == number:
+#         counter += 1
+# print(f'{number} count : {counter}')
