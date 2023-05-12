@@ -112,10 +112,10 @@ numbers = [10, 3, 7, 1, 9, 4, 2, 8, 5, 6]
 # odd_numbers = [n for n in numbers if n % 2 !=0]
 # print(odd_numbers)
 
-# def is_odd(x):
-#     return x % 2 != 0
-# result = list(filter(is_odd, numbers))
-# print(result)
+def is_odd(x):
+    return x % 2 != 0
+result = list(filter(is_odd, numbers))
+print(result)
 
 # lambda function
 '''
