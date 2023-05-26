@@ -92,4 +92,80 @@
 
 # stack    LIFO
 
-product_names_1 = ["p1", "p2", "p3"]
+# product_names_1 = ["p1", "p2", "p3"]
+# product_names_1.append("p4")
+# print(product_names_1)
+# print(product_names_1.pop())
+# print(product_names_1)
+
+# print('Red'<'orange')
+# print(ord('R'))
+# print(ord('o'))
+# colors = ['Red', 'orange', 'Yellow', 'green', 'Blue']
+
+# print(min(colors, key=lambda s: s.lower()))
+# print(max(colors, key=lambda s: s.lower()))
+
+# numbers  = [10,3,7,1,9,4,2,8,5,6]
+# reversed_numbers = [item for item in reversed(numbers)]
+# print(reversed_numbers)
+
+# names = ['Bob', 'Sue', 'Alex']
+# grade = [2, 3, 1]
+# for name, grade in zip(names, grade):
+#     print(f'Name = {name}, Grade = {grade}')
+
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+# import random
+# import seaborn as sns
+
+# rolls = [random.randrange(1, 7) for i in range(600)]
+# values, frequencies = np.unique(rolls, return_counts=True)
+
+# title = f'Rolling a six-sided Die {len(rolls)} times'
+
+# sns.set_style('whitegrid')
+# axes = sns.barplot(x=values, y=frequencies)
+# axes.set_title(title)
+# axes.set(xlabel='Die value', ylabel='Frequency')
+# for bar, f in zip(axes.patches, frequencies):
+#     x = bar.get_x() + bar.get_width()/2
+#     y = bar.get_height()
+#     axes.text(x, y, f, fontsize=10, ha='center')
+
+
+# plt.show()
+
+
+# my_variable = {}
+# print(type(my_variable))
+# my_variable = {1, 2, 3, 4, 5}
+# print(type(my_variable))
+
+
+# my_variable = {
+#     'Iran': 'IRI',
+#     'United States': 'USA'
+
+# }
+# print(my_variable['Iran'])
+
+# print(len(my_variable))
+# if len(my_variable):
+#     print("Not empty")
+# if len(my_variable) != 0:
+#     print("Not empty")
+# if my_variable:  # {}  []  ()   ''   0   None
+#     print("Not empty")
+
+# my_variable.clear()
+# print(my_variable)
+
+
+days_per_month = {
+    'Jan': 10,
+    'Feb': 20,
+}
+
