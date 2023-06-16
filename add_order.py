@@ -7,7 +7,7 @@ while True:
     if order_name == "exit":
         res = show_orders_summary(customer_orders, menuDict)
         print(res[0])
-        print(res[1])
+        print("Total Bill", res[1])
         break
     res = is_in_dict(menuDict, order_name)
     if not res:
